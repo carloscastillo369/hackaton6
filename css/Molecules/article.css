@@ -1,0 +1,13 @@
+.article {
+    display: flex;
+    margin-bottom: 30px;
+}   
+
+.article--first {
+    flex-direction: row-reverse;
+}
+
+.article__img {
+    margin-right: 20px;
+}
+

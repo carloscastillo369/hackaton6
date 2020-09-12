@@ -1,0 +1,15 @@
+.foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.icon {
+    margin-right: 40px;
+    display: flex;
+    width: 80px;
+    justify-content: space-between;
+}
+
+

@@ -3,6 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/Atoms/normalize.css">
+    <link rel="stylesheet" href="./css/Molecules/article.css">
+    <link rel="stylesheet" href="./css/Molecules/home.css">
+    <link rel="stylesheet" href="./css/Molecules/logo.css">
+    <link rel="stylesheet" href="./css/Molecules/sign.css">
+    <link rel="stylesheet" href="./css/Organisms/header.css">
+    <link rel="stylesheet" href="./css/Organisms/main.css">
+    <link rel="stylesheet" href="./css/Organisms/footer.css">
+
     <title>HACKATON Nº 6</title>
 </head>
 <body>
@@ -25,45 +34,29 @@
     <main class="main">
 
         <!--Aqui empieza home-->
-        <div class="home main__home">
-            <div class="jumbotron home__jumbotron">
-                <h1 class="jumbotron__title">Blog Afrianska</h1>
-                 <p class="jumbotron__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div class="main__section">
+            <div class="home main__home">
+                <div class="jumbotron home__jumbotron">
+                    <h1 class="jumbotron__title">Blog Afrianska</h1>
+                    <p class="jumbotron__text jumbotron--contain">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <form class="search home__search">
+                    <img class="search__img" src="./images/icon-search.png" alt="">
+                    <input class="search__input" type="text" placeholder="Search Article">
+                </form>
             </div>
-            <form class="search home__search">
-                <img class="search__img" src="./images/icon-search.png" alt="">
-                <input class="search__input" type="text" placeholder="Search Article">
-            </form>
+
         </div>
 
-
-        <!--Aqui empieza popular articles-->
-        <div class="popular-articles main__popular-articles">
-            <h2 class="title popular-articles__tittle">POPULAR</h2>
-            <div class="article popular-articles__article">
-                <img class="article__img" src="./images/img-post-1.png" alt=""> 
-                <div class="contain article__contain">
-                    <h3 class="subtitle contain__subtitle">Feugiat sodales at nullam tellus.</h3>
-                    <p class="contain__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi posuere nibh tempor fringilla porta pellentesque ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <div class="foot article__foot">
-                        <div class="creator foot__creator">
-                            <h4 class="creator__name">Samatha Leuthex </h4>
-                            <h5 class="creator__date">May 5, 3 min read</h5>
-                        </div>
-                        <div class="icon foot__icon">
-                            <img class="icon__save" src="./images/icon-save.png" alt="">
-                            <img class="icon__share" src="./images/icon-share.png" alt="">
-                        </div>
-                    </div>
-                </div> 
-            </div>
-
-            <div class="articles234 popular-articles__articles234">
-                <div class="article article234__article">
-                    <img class="article__img" src="./images/img-post-2.png" alt="">
+        <div class="main__section">
+            <!--Aqui empieza popular articles-->
+            <div class="popular-articles main__popular-articles">
+                <h2 class="title popular-articles__tittle title--article">POPULAR</h2>
+                <div class="article popular-articles__article article--first">
+                    <img class="article__img" src="./images/img-post-1.png" alt=""> 
                     <div class="contain article__contain">
-                        <h3 class="subtitle contain__subtitle">Porta proin tellus sed pulvinar odio eu pulvinar.</h3>
-                        <p class="contain__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <h3 class="subtitle contain__subtitle subtitle--firts-article">Feugiat sodales at nullam tellus.</h3>
+                        <p class="contain__text contain--popular">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi posuere nibh tempor fringilla porta pellentesque ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         <div class="foot article__foot">
                             <div class="creator foot__creator">
                                 <h4 class="creator__name">Samatha Leuthex </h4>
@@ -74,144 +67,165 @@
                                 <img class="icon__share" src="./images/icon-share.png" alt="">
                             </div>
                         </div>
-                    </div>
+                    </div> 
                 </div>
     
-                <div class="article article234__article">
-                    <img class="article__img" src="./images/img-post-3.png" alt="">
-                    <div class="contain article__contain">
-                        <h3 class="subtitle contain__subtitle">Non quam tortor, proin eu egestas scelerisque.</h3>
-                        <p class="contain__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <div class="foot article__foot">
-                            <div class="creator foot__creator">
-                                <h4 class="creator__name">Samatha Leuthex </h4>
-                                <h5 class="creator__date">May 5, 3 min read</h5>
-                            </div>
-                            <div class="icon foot__icon">
-                                <img class="icon__save" src="./images/icon-save.png" alt="">
-                                <img class="icon__share" src="./images/icon-share.png" alt="">
+                <div class="articles234 popular-articles__articles234">
+                    <div class="article article234__article">
+                        <img class="article__img" src="./images/img-post-2.png" alt="">
+                        <div class="contain article__contain">
+                            <h3 class="subtitle contain__subtitle subtitle--article234">Porta proin tellus sed pulvinar odio eu pulvinar.</h3>
+                            <p class="contain__text contain--popular">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <div class="foot article__foot">
+                                <div class="creator foot__creator">
+                                    <h4 class="creator__name">Samatha Leuthex </h4>
+                                    <h5 class="creator__date">May 5, 3 min read</h5>
+                                </div>
+                                <div class="icon foot__icon">
+                                    <img class="icon__save" src="./images/icon-save.png" alt="">
+                                    <img class="icon__share" src="./images/icon-share.png" alt="">
+                                </div>
                             </div>
                         </div>
-                    </div>   
-                </div>
-    
-                <div class="article article234__article">
-                    <img class="article__img" src="./images/img-post-4.png" alt="">
-                    <div class="contain article__contain">
-                        <h3 class="subtitle contain__subtitle">Amet amet sed pharetra risus sit eget interdum.</h3>
-                        <p class="contain__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <div class="foot article__foot">
-                            <div class="creator foot__creator">
-                                <h4 class="creator__name">Samatha Leuthex </h4>
-                                <h5 class="creator__date">May 5, 3 min read</h5>
+                    </div>
+        
+                    <div class="article article234__article">
+                        <img class="article__img" src="./images/img-post-3.png" alt="">
+                        <div class="contain article__contain">
+                            <h3 class="subtitle contain__subtitle subtitle--article234">Non quam tortor, proin eu egestas scelerisque.</h3>
+                            <p class="contain__text contain--popular">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <div class="foot article__foot">
+                                <div class="creator foot__creator">
+                                    <h4 class="creator__name">Samatha Leuthex </h4>
+                                    <h5 class="creator__date">May 5, 3 min read</h5>
+                                </div>
+                                <div class="icon foot__icon">
+                                    <img class="icon__save" src="./images/icon-save.png" alt="">
+                                    <img class="icon__share" src="./images/icon-share.png" alt="">
+                                </div>
                             </div>
-                            <div class="icon foot__icon">
-                                <img class="icon__save" src="./images/icon-save.png" alt="">
-                                <img class="icon__share" src="./images/icon-share.png" alt="">
+                        </div>   
+                    </div>
+        
+                    <div class="article article234__article">
+                        <img class="article__img" src="./images/img-post-4.png" alt="">
+                        <div class="contain article__contain">
+                            <h3 class="subtitle contain__subtitle subtitle--article234">Amet amet sed pharetra risus sit eget interdum.</h3>
+                            <p class="contain__text contain--popular">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <div class="foot article__foot">
+                                <div class="creator foot__creator">
+                                    <h4 class="creator__name">Samatha Leuthex </h4>
+                                    <h5 class="creator__date">May 5, 3 min read</h5>
+                                </div>
+                                <div class="icon foot__icon">
+                                    <img class="icon__save" src="./images/icon-save.png" alt="">
+                                    <img class="icon__share" src="./images/icon-share.png" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <a href="#all-article">SEE ALL POPULAR ARTICLE</a>     
             </div>
-            <a href="#all-article">SEE ALL POPULAR ARTICLE</a>     
         </div>
         
-
-        <!--Aqui empieza all articles-->
-        <div class="all-articles main__all-articles">
-            <h2 class="title all-articles__title" id="all-article">ALL ARTICLE</h2>
-            <div class="article all-articles__article">
-                <img class="article__img" src="./images/img-post-5.png" alt="">
-                <div class="contain article__contain">
-                    <h3 class="subtitle contain__subtitle">Massa eu in laoreet enim augue vulputate nunc.</h3>
-                    <p class="contain__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus quisque magna in nisl nibh bibendum ipsum, elit duis. Donec. </p>
-                    <div class="foot article__foot">
-                        <div class="creator foot__creator">
-                            <h4 class="creator__name">Samatha Leuthex </h4>
-                            <h5 class="creator__date">May 5, 3 min read</h5>
-                        </div>
-                        <div class="icon foot__icon">
-                            <img class="icon__save" src="./images/icon-save.png" alt="">
-                            <img class="icon__share" src="./images/icon-share.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="article all-article__article">
-                <img class="article__img" src="./images/img-post-6.png" alt="">
-                <div class="contain article__contain">
-                    <h3 class="subtitle contain__subtitle">Feugiat a euismod arcu feugiat posuere morbi.</h3>
-                    <p class="contain__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus quisque magna in nisl nibh bibendum ipsum, elit duis. Donec.</p>
-                    <div class="foot article__foot">
-                        <div class="creator foot__creator">
-                            <h4 class="creator__name">Samatha Leuthex </h4>
-                            <h5 class="creator__date">May 5, 3 min read</h5>
-                        </div>
-                        <div class="icon foot__icon">
-                            <img class="icon__save" src="./images/icon-save.png" alt="">
-                            <img class="icon__share" src="./images/icon-share.png" alt="">
+        <div class="main__section">
+            <!--Aqui empieza all articles-->
+            <div class="all-articles main__all-articles">
+                <h2 class="title all-articles__title title--article" id="all-article">ALL ARTICLE</h2>
+                <div class="article all-articles__article">
+                    <img class="article__img" src="./images/img-post-5.png" alt="">
+                    <div class="contain article__contain">
+                        <h3 class="subtitle contain__subtitle subtitle--all ">Massa eu in laoreet enim augue vulputate nunc.</h3>
+                        <p class="contain__text contain--all">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus quisque magna in nisl nibh bibendum ipsum, elit duis. Donec. </p>
+                        <div class="foot article__foot">
+                            <div class="creator foot__creator">
+                                <h4 class="creator__name">Samatha Leuthex </h4>
+                                <h5 class="creator__date">May 5, 3 min read</h5>
+                            </div>
+                            <div class="icon foot__icon">
+                                <img class="icon__save" src="./images/icon-save.png" alt="">
+                                <img class="icon__share" src="./images/icon-share.png" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="article all-article__article">
-                <img class="article__img" src="./images/img-post-7.png" alt="">
-                <div class="contain article__contain">
-                    <h3 class="subtitle contain__subtitle">Sociis purus pellentesque faucibus vitae et felis.</h3>
-                    <p class="contain__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus quisque magna in nisl nibh bibendum ipsum, elit duis. Donec.</p>
-                    <div class="foot article__foot">
-                        <div class="creator foot__creator">
-                            <h4 class="creator__name">Samatha Leuthex </h4>
-                            <h5 class="creator__date">May 5, 3 min read</h5>
-                        </div>
-                        <div class="icon foot__icon">
-                            <img class="icon__save" src="./images/icon-save.png" alt="">
-                            <img class="icon__share" src="./images/icon-share.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="article all-article__article">
-                <img class="article__img" src="./images/img-post-8.png" alt="">
-                <div class="contain article__contain">
-                    <h3 class="subtitle contain__subtitle">Cursus feugiat mi pellentesque mauris sed eu.</h3>
-                    <p class="contain__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus quisque magna in nisl nibh bibendum ipsum, elit duis. Donec.</p>
-                    <div class="foot article__foot">
-                        <div class="creator foot__creator">
-                            <h4 class="creator__name">Samatha Leuthex </h4>
-                            <h5 class="creator__date">May 5, 3 min read</h5>
-                        </div>
-                        <div class="icon foot__icon">
-                            <img class="icon__save" src="./images/icon-save.png" alt="">
-                            <img class="icon__share" src="./images/icon-share.png" alt="">
+    
+                <div class="article all-article__article">
+                    <img class="article__img" src="./images/img-post-6.png" alt="">
+                    <div class="contain article__contain">
+                        <h3 class="subtitle contain__subtitle subtitle--all">Feugiat a euismod arcu feugiat posuere morbi.</h3>
+                        <p class="contain__text contain--all">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus quisque magna in nisl nibh bibendum ipsum, elit duis. Donec.</p>
+                        <div class="foot article__foot">
+                            <div class="creator foot__creator">
+                                <h4 class="creator__name">Samatha Leuthex </h4>
+                                <h5 class="creator__date">May 5, 3 min read</h5>
+                            </div>
+                            <div class="icon foot__icon">
+                                <img class="icon__save" src="./images/icon-save.png" alt="">
+                                <img class="icon__share" src="./images/icon-share.png" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="article all-article__article">
-                <img class="article__img" src="./images/img-post-9.png" alt="">
-                <div class="contain article__contain">
-                    <h3 class="subtitle contain__subtitle">A morbi arcu curabitur etiam fringilla augue.</h3>
-                    <p class="contain__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus quisque magna in nisl nibh bibendum ipsum, elit duis. Donec.</p>
-                    <div class="foot article__foot">
-                        <div class="creator foot__creator">
-                            <h4 class="creator__name">Samatha Leuthex </h4>
-                            <h5 class="creator__date">May 5, 3 min read</h5>
-                        </div>
-                        <div class="icon foot__icon">
-                            <img class="icon__save" src="./images/icon-save.png" alt="">
-                            <img class="icon__share" src="./images/icon-share.png" alt="">
+    
+                <div class="article all-article__article">
+                    <img class="article__img" src="./images/img-post-7.png" alt="">
+                    <div class="contain article__contain">
+                        <h3 class="subtitle contain__subtitle subtitle--all">Sociis purus pellentesque faucibus vitae et felis.</h3>
+                        <p class="contain__text contain--all">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus quisque magna in nisl nibh bibendum ipsum, elit duis. Donec.</p>
+                        <div class="foot article__foot">
+                            <div class="creator foot__creator">
+                                <h4 class="creator__name">Samatha Leuthex </h4>
+                                <h5 class="creator__date">May 5, 3 min read</h5>
+                            </div>
+                            <div class="icon foot__icon">
+                                <img class="icon__save" src="./images/icon-save.png" alt="">
+                                <img class="icon__share" src="./images/icon-share.png" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
+    
+                <div class="article all-article__article">
+                    <img class="article__img" src="./images/img-post-8.png" alt="">
+                    <div class="contain article__contain">
+                        <h3 class="subtitle contain__subtitle subtitle--all">Cursus feugiat mi pellentesque mauris sed eu.</h3>
+                        <p class="contain__text contain--all">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus quisque magna in nisl nibh bibendum ipsum, elit duis. Donec.</p>
+                        <div class="foot article__foot">
+                            <div class="creator foot__creator">
+                                <h4 class="creator__name">Samatha Leuthex </h4>
+                                <h5 class="creator__date">May 5, 3 min read</h5>
+                            </div>
+                            <div class="icon foot__icon">
+                                <img class="icon__save" src="./images/icon-save.png" alt="">
+                                <img class="icon__share" src="./images/icon-share.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="article all-article__article">
+                    <img class="article__img" src="./images/img-post-9.png" alt="">
+                    <div class="contain article__contain">
+                        <h3 class="subtitle contain__subtitle subtitle--all">A morbi arcu curabitur etiam fringilla augue.</h3>
+                        <p class="contain__text contain--all">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus quisque magna in nisl nibh bibendum ipsum, elit duis. Donec.</p>
+                        <div class="foot article__foot">
+                            <div class="creator foot__creator">
+                                <h4 class="creator__name">Samatha Leuthex </h4>
+                                <h5 class="creator__date">May 5, 3 min read</h5>
+                            </div>
+                            <div class="icon foot__icon">
+                                <img class="icon__save" src="./images/icon-save.png" alt="">
+                                <img class="icon__share" src="./images/icon-share.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <a class="all-articles__preview" href="">Old Post</a>
+                <a class="all-articles__next" href="">New Post</a>
             </div>
-
-            <a class="all-articles__preview" href="">Old Post</a>
-            <a class="all-articles__next" href="">New Post</a>
         </div>
     </main>
 
@@ -220,7 +234,7 @@
         <!--Aqui empieza footer-->
         <div class="work footer__work">
             <div class="team work__team">
-                <h3 class="team__title">Intersted to woek with our team?</h3>
+                <h3 class="team__title team__title--white">Intersted to woek with our team?</h3>
                 <p class="team__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
             </div>
             <div class="talk work__talk">
@@ -231,7 +245,7 @@
         <!--Aqui empieza contact-->
         <div class="contact footer__contact">
             <div class="afrianska contact__afrianska">
-                <h2 class="afrianska__title">Afrianska</h2>
+                <h2 class="afrianska__title contact--title">Afrianska</h2>
                 <div class="afrianska__contain">
                     <p class="afrianska__address">Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit.</p>
                     <p class="afrianska__phone">+62-812-7313-4321</p>
@@ -240,7 +254,7 @@
             </div>
 
             <div class="about contact__about">
-                <h2 class="about__title">About US</h2>
+                <h2 class="about__title contact--title">About US</h2>
                 <a class="about__us" href="">About</a>
                 <a class="about__us" href="">What We Do</a>
                 <a class="about__us" href="">Project</a>
@@ -248,7 +262,7 @@
 
             </div>
             <div class="follow contact__follow">
-                <h2 class="follow__title">Follow US</h2>
+                <h2 class="follow__title contact--title">Follow US</h2>
                 <a class="follow__redes" href="">Instagram</a>
                 <a class="follow__redes" href="">Facebook</a>
                 <a class="follow__redes" href="">Linkedln</a>

@@ -1,0 +1,30 @@
+.logo {
+    position: relative;
+    width: 65px;
+    height: 33px;
+    margin-left: 30px;
+}
+
+.logo__side-left {
+    width: 32px;
+    height: 32px;
+    background: #316099;
+    border-radius: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.logo__side-right {
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    border: 2px solid #316099;
+    background: white;
+    position: absolute;
+    margin-left: 20px;
+    z-index: 10;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
